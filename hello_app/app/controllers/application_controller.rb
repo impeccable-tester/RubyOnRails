@@ -4,7 +4,11 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   
   def hello
-    render text: "hello, titli!" + ('a'..'z').to_a.shuffle[0..7].join
+    render text: "hello, titli! " + ('a'..'z').to_a.shuffle[0..7].join
+  end
+  
+  def goodbye
+    render text: "¿hello, impeccable.tester"
   end
   
 end
